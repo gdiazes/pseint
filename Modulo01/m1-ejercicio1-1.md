@@ -35,5 +35,3 @@ FinProceso // Corregido: Solo se necesita 'FinProceso'.
 1.  La instrucción para mostrar mensajes en PSeInt es `Escribir`, no `Escribo`.
 2.  La línea final del algoritmo debe ser simplemente `FinProceso`, sin repetir el nombre del algoritmo.
 3.  El texto literal que se quiere mostrar con `Escribir` debe ir encerrado entre comillas dobles (`"`). Se añadieron las comillas alrededor de `Hola Mundo!`.
-```
-
