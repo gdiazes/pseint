@@ -45,6 +45,7 @@ FinProceso // Corregido: Palabra clave correcta.
 
 <details>
 <summary>Mostrar Explicación de la Solución</summary>
+    
 ## Explicación de la Solución
     
 1.  Dado que se piden números enteros y la resta de enteros es un entero, es más apropiado definir las variables como `Entero` en lugar de `Real`.
