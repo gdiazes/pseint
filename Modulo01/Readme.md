@@ -16,6 +16,7 @@ Piensa en un algoritmo como una **receta de cocina** o un **manual de instruccio
 *   **Definido:** Si sigues el algoritmo varias veces con los mismos datos de entrada, siempre obtendrás el mismo resultado.
 *   **Finito:** El algoritmo debe terminar después de un número finito de pasos. No puede quedarse en un bucle infinito.
 
+<img src="./img/caracteristicas-algoritmo" alt="Caracteristicas de un Algoritmo" width="50%" height="50%"/>
 ### 2. ¿Qué es el Pseudocódigo?
 
 El pseudocódigo es una forma de describir los pasos de un algoritmo utilizando un lenguaje **intermedio** entre el lenguaje humano natural y un lenguaje de programación real (como Java, Python, C++, etc.).
