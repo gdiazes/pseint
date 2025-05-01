@@ -1,8 +1,3 @@
-## Módulo 2: Operadores y Expresiones Condicionales Simples
-
-**Archivo: `Modulo2/Modulo2.md`**
-
-```markdown
 # Módulo 2: Operadores y Expresiones Condicionales Simples
 
 ## Teoría
