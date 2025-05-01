@@ -19,6 +19,9 @@ FinProceso SaludoBasico // Pista 2: ¿Es necesario repetir el nombre al finaliza
 // Pista 3: Falta algo fundamental al inicio del mensaje para que sea considerado texto.
 ```
 
+<details>
+<summary>Mostrar Solución Correcta</summary>
+
 ## Solución Correcta
 
 ```pseudocode
@@ -30,8 +33,15 @@ Proceso SaludoBasico_Solucion
 FinProceso // Corregido: Solo se necesita 'FinProceso'.
 ```
 
+</details>
+
+<details>
+<summary>Mostrar Explicación de la Solución</summary>
+
 ## Explicación de la Solución
 
 1.  La instrucción para mostrar mensajes en PSeInt es `Escribir`, no `Escribo`.
 2.  La línea final del algoritmo debe ser simplemente `FinProceso`, sin repetir el nombre del algoritmo.
 3.  El texto literal que se quiere mostrar con `Escribir` debe ir encerrado entre comillas dobles (`"`). Se añadieron las comillas alrededor de `Hola Mundo!`.
+
+</details>
