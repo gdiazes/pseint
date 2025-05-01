@@ -1,12 +1,3 @@
-¡Perfecto! Comencemos con la creación del **Módulo 1**.
-
-Primero, el archivo principal del módulo que contendrá la teoría y los enlaces a los ejercicios.
-
----
-
-**Archivo: `Modulo1/Modulo1.md`**
-
-```markdown
 # Módulo 1: Introducción a los Algoritmos y PSeInt
 
 ## Teoría
