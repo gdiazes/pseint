@@ -1,4 +1,3 @@
-```markdown
 # Módulo 1 - Ejercicio 1 (Dificultad 1)
 
 ## Enunciado
@@ -46,4 +45,3 @@ FinProceso // Corregido: Solo se necesita 'FinProceso'.
 3.  El texto literal que se quiere mostrar con `Escribir` debe ir encerrado entre comillas dobles (`"`). Se añadieron las comillas alrededor de `Hola Mundo!`.
 
 </details>
-```
