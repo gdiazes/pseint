@@ -8,7 +8,7 @@
 
 **Módulo 1: Introducción a los Algoritmos y PSeInt**
 
-*   **Teoría (`Modulo1.md`):**
+*   **Teoría:**
     *   ¿Qué es un algoritmo? (Concepto, características: preciso, definido, finito).
     *   ¿Qué es el pseudocódigo? (Ventajas, relación con lenguajes de programación).
     *   Introducción a la interfaz de PSeInt (Editor, ejecución paso a paso, panel de variables).
@@ -21,7 +21,7 @@
   
 **Módulo 2: Operadores y Expresiones Condicionales Simples**
 
-*   **Teoría (`Modulo2.md`):**
+*   **Teoría:**
     *   Operadores Aritméticos (`+`, `-`, `*`, `/`, `^`, `%` o `MOD`).
     *   Operadores Relacionales (`>`, `<`, `=`, `>=`, `<=`, `<>`).
     *   Operadores Lógicos (`Y`, `O`, `NO` o `&`, `|`, `~`).
@@ -32,7 +32,7 @@
 
 **Módulo 3: Estructuras Condicionales Anidadas y Múltiples**
 
-*   **Teoría (`Modulo3.md`):**
+*   **Teoría:**
     *   Condicionales anidados (`Si` dentro de otro `Si` o `Sino`).
     *   Buenas prácticas para evitar complejidad excesiva en anidamientos.
     *   Estructura condicional múltiple: `Segun ... Hacer ... De Otro Modo ... FinSegun`.
@@ -41,7 +41,7 @@
 
 **Módulo 4: Estructuras Repetitivas (Bucles)**
 
-*   **Teoría (`Modulo4.md`):**
+*   **Teoría:**
     *   Necesidad de repetir instrucciones.
     *   Bucle `Mientras ... Hacer ... FinMientras` (condición al inicio).
     *   Bucle `Repetir ... Hasta Que ...` (condición al final, se ejecuta al menos una vez).
@@ -53,7 +53,7 @@
 
 **Módulo 5: Arreglos Unidimensionales (Vectores)**
 
-*   **Teoría (`Modulo5.md`):**
+*   **Teoría:**
     *   ¿Qué es un arreglo? Concepto de colección de datos del mismo tipo.
     *   Vectores (arreglos de una dimensión).
     *   Declaración de vectores: `Dimension nombre_vector[tamaño]`.
@@ -64,7 +64,7 @@
 
 **Módulo 6: Arreglos Bidimensionales (Matrices)**
 
-*   **Teoría (`Modulo6.md`):**
+*   **Teoría:**
     *   Matrices (arreglos de dos dimensiones - filas y columnas).
     *   Declaración de matrices: `Dimension nombre_matriz[filas, columnas]`.
     *   Acceso a elementos: Índices (fila, columna).
@@ -73,7 +73,7 @@
 
 **Módulo 7: Subprocesos (Funciones y Procedimientos)**
 
-*   **Teoría (`Modulo7.md`):**
+*   **Teoría:**
     *   Necesidad de modularidad: Reutilización de código, claridad, división de problemas.
     *   Concepto de Subproceso (equivalente a funciones/procedimientos).
     *   Definición de un Subproceso: `SubProceso [retorno] <- Nombre ( [argumentos] ) ... FinSubProceso`.
