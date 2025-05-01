@@ -26,7 +26,10 @@ Proceso CalcularDescuento
 FinProceso
 ```
 
-<details> <summary>Mostrar Solución Correcta</summary> ## Solución Correcta
+<details> 
+    <summary>Mostrar Solución Correcta</summary>
+
+## Solución Correcta
 ```pseudocode
 Proceso CalcularDescuento_Solucion
 
@@ -50,8 +53,14 @@ Proceso CalcularDescuento_Solucion
 FinProceso
 ```
 
-</details><details><summary>Mostrar Explicación de la Solución</summary>## Explicación de la Solución
+</details>
+
+<details>
+    <summary>Mostrar Explicación de la Solución</summary>
+    
+## Explicación de la Solución
 1.  Se definió la variable como `montoCompra` pero se intentó leer en `monto_Compra`. Se corrigió `Leer` para usar el nombre definido.
 2.  La condición para aplicar el descuento es que la compra sea *superior* a $1000, es decir, `montoCompra > 1000`. La condición original era `montoCompra < 1000`, que haría lo contrario.
 3.  Dentro del `Si`, se usó `=` en lugar de `<-` para la asignación. Además, la variable `montoDescontado` no había sido definida. Se añadió `montoDescontado` a la lista de `Definir` y se corrigió el operador a `<-`.
+
 </details>
