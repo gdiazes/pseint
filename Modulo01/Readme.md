@@ -8,6 +8,7 @@
 
 Piensa en un algoritmo como una **receta de cocina** o un **manual de instrucciones**. Es una secuencia de pasos **lógicos, ordenados y finitos** que describen exactamente cómo resolver un problema o realizar una tarea.
 <img src="./img/Algoritmo.png" alt="Algoritmo" />
+![drawing](./img/Algoritmo.png){ width=50% }
 
 **Características clave de un algoritmo:**
 
