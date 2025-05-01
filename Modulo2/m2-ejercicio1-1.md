@@ -46,6 +46,7 @@ FinProceso // Corregido: Palabra clave correcta.
 <details>
 <summary>Mostrar Explicación de la Solución</summary>
 ## Explicación de la Solución
+    
 1.  Dado que se piden números enteros y la resta de enteros es un entero, es más apropiado definir las variables como `Entero` en lugar de `Real`.
 2.  En la operación de resta, se escribió `num_2` en lugar de `num2`. Los nombres de variables deben coincidir exactamente con su definición.
 3.  La palabra clave para finalizar un algoritmo es `FinProceso`, no `FinProseso`.
