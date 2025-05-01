@@ -9,7 +9,7 @@
 Piensa en un algoritmo como una **receta de cocina** o un **manual de instrucciones**. Es una secuencia de pasos **lógicos, ordenados y finitos** que describen exactamente cómo resolver un problema o realizar una tarea.
 <img src="./img/Algoritmo.png" alt="Algoritmo" />
 
-** Características clave de un algoritmo:
+**Características clave de un algoritmo:**
 
 *   **Preciso:** Cada paso debe estar claramente definido, sin ambigüedad.
 *   **Definido:** Si sigues el algoritmo varias veces con los mismos datos de entrada, siempre obtendrás el mismo resultado.
