@@ -1,46 +1,45 @@
-# Curso de Introducción a la Programación con PseInt
+# Módulo 1: Introducción a los Algoritmos y PSeInt
 
-¡Bienvenido/a al curso de introducción a la programación utilizando PseInt! Este curso está diseñado para principiantes absolutos, sin necesidad de experiencia previa en programación. Aprenderemos los fundamentos de la lógica de programación y cómo expresarla mediante pseudocódigo.
+## Teoría
 
-## Formato del Curso
+¡Bienvenido/a al mundo de la programación con PSeInt! Antes de escribir código complejo, debemos entender los fundamentos: qué es un algoritmo y cómo PSeInt nos ayuda a crearlos.
 
-*   **Plataforma:** GitHub (usando Markdown).
-*   **Metodología:** Aprendizaje basado en ejercicios prácticos.
-*   **Estructura:** El curso se divide en módulos temáticos.
-*   **Ejercicios:**
-    *   Cada módulo contendrá 10 ejercicios.
-    *   Los ejercicios tendrán un nivel de dificultad progresivo, del 1 (más fácil) al 10 (más difícil dentro del módulo).
-    *   Cada ejercicio presentará un código con **3 errores intencionales**.
-    *   Junto a cada error (o cerca de la línea) habrá un comentario (`// Pista X: ...`) que te dará una pequeña ayuda para identificarlo y corregirlo.
-    *   Tu tarea será encontrar los errores, entender por qué son errores y corregir el código para que funcione como se espera.
+### 1. ¿Qué es un Algoritmo?
 
-## ¿Cómo usar este material?
+Piensa en un algoritmo como una **receta de cocina** o un **manual de instrucciones**. Es una secuencia de pasos **lógicos, ordenados y finitos** que describen exactamente cómo resolver un problema o realizar una tarea.
 
-1.  Lee la introducción de cada módulo para entender los conceptos que se practicarán.
-2.  Aborda los ejercicios en orden de dificultad.
-3.  Copia el código del ejercicio en tu PseInt.
-4.  Intenta ejecutarlo. Observa los mensajes de error o el comportamiento incorrecto.
-5.  Usa las pistas para localizar y corregir los 3 errores.
-6.  Una vez corregido, ejecuta el código para asegurarte de que funciona correctamente y produce el resultado esperado.
-7.  ¡Experimenta! Modifica el código corregido para ver qué pasa.
+Características clave de un algoritmo:
 
-¡Empecemos!
+*   **Preciso:** Cada paso debe estar claramente definido, sin ambigüedad.
+*   **Definido:** Si sigues el algoritmo varias veces con los mismos datos de entrada, siempre obtendrás el mismo resultado.
+*   **Finito:** El algoritmo debe terminar después de un número finito de pasos. No puede quedarse en un bucle infinito.
 
----
+### 2. ¿Qué es el Pseudocódigo?
 
-## Módulo 1: Introducción, Entrada y Salida Básica
+El pseudocódigo es una forma de describir los pasos de un algoritmo utilizando un lenguaje **intermedio** entre el lenguaje humano natural y un lenguaje de programación real (como Java, Python, C++, etc.).
 
-**Conceptos:** Estructura básica de un algoritmo (`Proceso`/`FinProceso`), comentarios (`//`), escribir mensajes en pantalla (`Escribir`), leer datos del teclado (`Leer`), definir variables (`Definir Como`), tipos de datos básicos (`Entero`, `Caracter`, `Real`).
+**Ventajas:**
 
----
+*   Se enfoca en la **lógica** del problema, no en la sintaxis estricta de un lenguaje específico.
+*   Es más fácil de leer y entender que el código de programación real para los principiantes.
+*   Facilita la posterior traducción a cualquier lenguaje de programación.
 
-### Ejercicio 1.1 (Dificultad: 1/10)
+### 3. Introducción a PSeInt
 
-**Objetivo:** Mostrar un simple mensaje de "Hola Mundo" en la pantalla.
+PSeInt es una herramienta fantástica diseñada para **aprender los fundamentos de la programación y el desarrollo de la lógica**. Nos permite escribir algoritmos en pseudocódigo (en español) y ejecutarlos para ver cómo funcionan.
 
-```Pseint
-Proceso SaludoBasico
-    // Este proceso deberia mostrar un saludo
-    Escribir Hola Mundo"; // Pista 1: Los mensajes de texto necesitan algo especial alrededor.
-Fin Proceso // Pista 2: Revisa la palabra clave para finalizar el proceso.
-// Pista 3: Falta la instrucción principal para iniciar el algoritmo.
+**Interfaz Principal:**
+
+*   **Área de Edición:** Donde escribes tu pseudocódigo.
+*   **Botones de Ejecución:** El botón verde (▶️) ejecuta el algoritmo completo. El botón con los "pies" permite la ejecución **paso a paso**, lo cual es ¡muy útil! para entender el flujo.
+*   **Panel de Variables (opcional):** Puede mostrar el valor de las variables mientras el algoritmo se ejecuta.
+*   **Área de Salida:** Donde ves los mensajes que tu algoritmo muestra (`Escribir`) y donde ingresas datos cuando el algoritmo los pide (`Leer`).
+
+### 4. Estructura Básica en PSeInt
+
+Todo algoritmo en PSeInt comienza con la palabra clave `Proceso` (o `Algoritmo`, según la configuración) seguida de un nombre descriptivo, y termina con `FinProceso` (o `FinAlgoritmo`).
+
+```pseudocode
+Proceso MiPrimerAlgoritmo
+    // Aquí van las instrucciones
+FinProceso
