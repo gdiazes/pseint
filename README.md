@@ -2,9 +2,6 @@
 
 **Objetivo General:** Que el estudiante domine la lógica de programación y la escritura de algoritmos utilizando pseudocódigo estricto en PSeInt, resolviendo problemas de dificultad creciente.
 
-**Formato:** Archivos Markdown para GitHub.
-
-**Desglose de Módulos:**
 
 **Módulo 1: Introducción a los Algoritmos y PSeInt**
 
