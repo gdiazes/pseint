@@ -25,7 +25,7 @@ FinProceso
 <details> 
     <summary>Mostrar Solución Correcta</summary> 
 
-    ## Solución Correcta
+## Solución Correcta
 ```pseudocode
 Proceso EsVocalSimple_Solucion
 
