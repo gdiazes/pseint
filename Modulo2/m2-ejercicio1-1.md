@@ -22,6 +22,7 @@ Fin Proseso // Pista 3: Revisa la palabra clave final.
 ```
 <details>
 <summary>Mostrar Solución Correcta</summary>
+    
 ## Solución Correcta
 ```pseudocode
 Proceso RestaBasica_Solucion
@@ -39,7 +40,9 @@ Proceso RestaBasica_Solucion
 
 FinProceso // Corregido: Palabra clave correcta.
 ```
+
 </details>
+
 <details>
 <summary>Mostrar Explicación de la Solución</summary>
 ## Explicación de la Solución
