@@ -39,7 +39,9 @@ Proceso CalculadoraSegun
 FinProceso
 ```
 
-<details><summary>Mostrar Solución Correcta</summary>## Solución Correcta
+<details><summary>Mostrar Solución Correcta</summary>
+
+## Solución Correcta
 ```pseudocode
 Proceso CalculadoraSegun_Solucion
 
@@ -85,6 +87,9 @@ FinProceso
 ```
 
 </details><details><summary>Mostrar Explicación de la Solución</summary>
+
+## Explicación de la Solución
+
 1.  La variable `opcion` almacena un número entero (1, 2, 3 o 4), por lo que su tipo debe ser `Entero`, no `Caracter`.
 2.  Como `opcion` es `Entero`, las claves dentro del `Segun` deben ser los números literales `1`, `2`, `3`, `4`, sin comillas. Las comillas se usarían si `opcion` fuera `Caracter`.
 3.  La palabra clave para finalizar la estructura `Segun` es `FinSegun`, no `Fin Segun` (separado). Adicionalmente, el código original tenía un problema lógico: mostraba la variable `resultado` incluso si había ocurrido un error (división por cero u opción inválida), lo que podría mostrar un valor incorrecto o no inicializado. La solución introduce una variable lógica `operacionValida` para controlar si se debe mostrar el resultado final.
