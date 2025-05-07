@@ -2,7 +2,6 @@
 
 **Archivo: `Modulo3/Modulo3.md`**
 
-```markdown
 # Módulo 3: Estructuras Condicionales Anidadas y Múltiples
 
 ## Teoría
