@@ -29,20 +29,21 @@ FinProceso
 ## Solución Correcta
 ```pseudocode
 Proceso DiaLaboralSi_Solucion
-
+	
     Definir dia Como Entero;
-
+	
     Escribir "Ingrese número de día (1-7):";
     Leer dia;
-
+	
     Si dia >= 1 Y dia <= 5 Entonces // Corregido: Operador correcto es '<='.
         Escribir "Es un día laboral.";
     Sino Si dia = 6 O dia = 7 Entonces // Corregido: Operador de igualdad es '='.
-        Escribir "Es fin de semana.";
-    Sino // Añadido: Manejo del caso inválido.
-        Escribir "Número de día inválido.";
-    FinSi
-
+			Escribir "Es fin de semana.";
+		Sino // Añadido: Manejo del caso inválido.
+			Escribir "Número de día inválido.";
+		FinSi
+	FinSi
+		
 FinProceso
 ```
 </details>
