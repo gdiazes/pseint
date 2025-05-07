@@ -1,7 +1,3 @@
-## Módulo 3: Estructuras Condicionales Anidadas y Múltiples
-
-**Archivo: `Modulo3/Modulo3.md`**
-
 # Módulo 3: Estructuras Condicionales Anidadas y Múltiples
 
 ## Teoría
