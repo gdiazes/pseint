@@ -49,7 +49,7 @@ FinProceso
 
 </details><details><summary>Mostrar Explicación de la Solución</summary>
 
-# Explicación de la Solución
+## Explicación de la Solución
 1.  La variable `dia` almacena un número entero (1 a 7), por lo que su tipo debe ser `Entero`, no `Caracter`.
 2.  Cuando la variable evaluada en `Segun` es numérica (`Entero` o `Real`), las opciones (`1, 2, 3...`) también deben ser valores numéricos literales, sin comillas. Las comillas se usan si la variable fuera `Caracter` y las opciones fueran texto.
 3.  La cláusula `De Otro Modo` dentro de un `Segun` debe terminar con dos puntos (`:`), igual que las otras opciones. Faltaban los dos puntos.
