@@ -10,6 +10,42 @@ Escribe un algoritmo que calcule el Índice de Masa Corporal (IMC = peso / altur
 ## Código con Errores
 ```pseudocode
 Proceso CalcularIMC
+
+    Definir peso, altura, imc Como Real;
+
+    Escribir "Ingrese su peso en kg:";
+    Leer peso;
+    Escribir "Ingrese su altura en metros:";
+    Leer altura;
+
+    // Calcular IMC si la altura es válida
+    Si altura >= 0 Entonces // Pista 1: ¿Puede la altura ser exactamente 0 para calcular IMC?
+        imc <- peso / (altura ^ 2);
+
+        Escribir "Su IMC es: ", imc;
+
+        // Clasificar
+        Si imc < 18.5 Entonces
+            Escribir "Clasificación: Bajo peso";
+        Sino Si imc >= 18.5 O imc <= 24.9 Entonces // Pista 2: ¿Debe cumplirse una condición ('O') o ambas ('Y') para estar en este rango?
+            Escribir "Clasificación: Peso normal";
+        Sino Si imc >= 25.0 Y imc <= 29.9 Entonces
+            Escribir "Clasificación: Sobrepeso";
+        Sino // Si no es ninguno de los anteriores, y es >= 30
+            Escribir "Clasificación: Obeso"; // Pista 3: Falta cerrar la estructura interna.
+        // FinSi faltante
+    Sino
+        Escribir "Altura inválida.";
+    FinSi
+
+FinProceso
+```
+
+<details><summary>Mostrar Solución Correcta</summary>
+
+## Solución Correcta
+```pseudocode
+Proceso CalcularIMC
 	
     Definir peso, altura, imc Como Real;
 	
