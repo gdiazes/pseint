@@ -23,6 +23,9 @@ Proceso DiaLaboralSi
 FinProceso
 ```
 
+<details>
+<summary>Mostrar Solución Correcta</summary>
+
 ## Solución Correcta
 ```pseudocode
 Proceso DiaLaboralSi_Solucion
@@ -42,8 +45,14 @@ Proceso DiaLaboralSi_Solucion
 
 FinProceso
 ```
+</details>
+
+<details>
+<summary>Mostrar Explicación de la Solución</summary>
 
 ## Explicación de la Solución
 1.  El operador relacional para "menor o igual que" es `<=`, no `=<`. Se corrigió en la primera condición.
 2.  El operador para comparar si dos valores son iguales en PSeInt es un solo signo de igual (`=`), no doble (`==`) como en otros lenguajes. Se corrigió en la segunda condición.
 3.  El código original no manejaba el caso en que el usuario ingresara un número fuera del rango 1-7 (ej: 0, 8, -2). Se añadió un mensaje en el último `Sino` para indicar que el número de día es inválido.
+
+</details>
