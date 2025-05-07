@@ -30,27 +30,31 @@ FinProceso
 
 ## Solución Correcta
 ```pseudocode
-Proceso CalificacionLiteral_Solucion
-
-    Definir nota Como Real; // Corregido: Usar Real para permitir decimales.
-
+Proceso CalificacionLiteral_Solucion_Corregido
+	
+    Definir nota Como Real;
+	
     Escribir "Ingrese la calificación (0-10):";
     Leer nota;
-
-    Si nota >= 0 Y nota <= 10 Entonces // Validar rango primero
-        Si nota >= 9 Entonces // Nota: no hace falta 'Y nota <= 10' porque ya está validado.
+	
+    Si nota >= 0 Y nota <= 10 Entonces // Si Principal (externo)
+        Si nota >= 9 Entonces           // Si Anidado Nivel 1
             Escribir "Sobresaliente";
-        Sino Si nota >= 7 Entonces // No hace falta 'Y nota < 9', porque si no, habría entrado arriba.
-            Escribir "Notable";
-        Sino Si nota >= 5 Entonces // No hace falta 'Y nota < 7'.
-            Escribir "Aprobado";
-        Sino // Si es >= 0 y < 5
-            Escribir "Suspenso";
-        FinSi
-    Sino // Si la nota está fuera del rango 0-10
+        Sino                           // Sino del Si Anidado Nivel 1
+            Si nota >= 7 Entonces      // Si Anidado Nivel 2
+                Escribir "Notable";
+            Sino                       // Sino del Si Anidado Nivel 2
+                Si nota >= 5 Entonces  // Si Anidado Nivel 3
+                    Escribir "Aprobado";
+                Sino                   // Sino del Si Anidado Nivel 3
+                    Escribir "Suspenso";
+                FinSi                  // Cierra Si Anidado Nivel 3
+            FinSi                      // Cierra Si Anidado Nivel 2
+        FinSi                          // Cierra Si Anidado Nivel 1
+    Sino                               // Sino del Si Principal
         Escribir "Calificación fuera de rango (0-10).";
-    FinSi
-
+    FinSi                              // Cierra Si Principal
+	
 FinProceso
 ```
 

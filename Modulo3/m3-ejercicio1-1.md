@@ -36,11 +36,12 @@ Proceso PositivoNegativoCero_Solucion
 
     Si num > 0 Entonces
         Escribir "El número es positivo."; // Corregido: Añadir punto y coma si es necesario.
-    Sino Si num < 0 Entonces // Correcto (asumiendo ;)
-        Escribir "El número es negativo."; // Corregido: Añadir punto y coma si es necesario.
-    Sino // Lógica: Si no es > 0 ni < 0, entonces es 0.
-        Escribir "El número es cero."; // Corregido: Mensaje correcto para el caso restante.
-    FinSi // Correcto: Cierra la estructura Si/Sino Si/Sino.
+        Sino Si num < 0 Entonces // Correcto (asumiendo ;)
+            Escribir "El número es negativo."; // Corregido: Añadir punto y coma si es necesario.
+        Sino // Lógica: Si no es > 0 ni < 0, entonces es 0.
+            Escribir "El número es cero."; // Corregido: Mensaje correcto para el caso restante.
+        FinSi // Correcto: Cierra la estructura Si/Sino Si/Sino.
+   FinSi
 
 FinProceso
 ```
