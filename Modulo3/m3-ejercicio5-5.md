@@ -31,26 +31,32 @@ FinProceso
 
 ## Solución Correcta
 ```pseudocode
-Proceso TipoDeAngulo_Solucion
+Proceso TipoDeAngulo_Solucion_AnidadoEstricto
 
     Definir angulo Como Real;
 
     Escribir "Ingrese la medida del ángulo (0-180 grados):";
     Leer angulo;
 
-    Si angulo >= 0 Y angulo <= 180 Entonces // Validar rango primero
-        Si angulo < 90 Entonces // Corregido: Incluye 0, y ya sabemos que es >= 0.
+    Si angulo >= 0 Y angulo <= 180 Entonces // Si Principal (Validación de rango)
+        // Inicio de la anidación para tipos de ángulo
+        Si angulo < 90 Entonces             // Si Anidado Nivel 1
             Escribir "Ángulo Agudo";
-        Sino Si angulo = 90 Entonces
-            Escribir "Ángulo Recto";
-        Sino Si angulo < 180 Entonces // Corregido: Ya sabemos que es > 90. Condición 'Y' implícita.
-            Escribir "Ángulo Obtuso";
-        Sino // Si no es < 180, y está en rango, solo puede ser 180
-            Escribir "Ángulo Llano";
-        FinSi
-    Sino
-        Escribir "Ángulo fuera de rango (0-180)."; // Corregido: Mensaje para fuera de rango.
-    FinSi
+        Sino                                // Sino para Si Anidado Nivel 1
+            Si angulo = 90 Entonces         // Si Anidado Nivel 2
+                Escribir "Ángulo Recto";
+            Sino                            // Sino para Si Anidado Nivel 2
+                Si angulo < 180 Entonces    // Si Anidado Nivel 3
+                    Escribir "Ángulo Obtuso";
+                Sino                        // Sino para Si Anidado Nivel 3 (solo puede ser 180)
+                    Escribir "Ángulo Llano";
+                FinSi                       // Cierra Si Anidado Nivel 3
+            FinSi                           // Cierra Si Anidado Nivel 2
+        FinSi                               // Cierra Si Anidado Nivel 1
+        // Fin de la anidación para tipos de ángulo
+    Sino                                    // Sino para Si Principal (ángulo fuera de rango)
+        Escribir "Ángulo fuera de rango (0-180).";
+    FinSi                                   // Cierra Si Principal
 
 FinProceso
 ```
