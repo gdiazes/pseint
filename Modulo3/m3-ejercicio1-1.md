@@ -22,7 +22,8 @@ Proceso PositivoNegativoCero
 
 FinProceso
 ```
-
+<details>
+<summary>Mostrar Solución Correcta</summary>
 ## Solución Correcta
 ```pseudocode
 Proceso PositivoNegativoCero_Solucion
@@ -42,9 +43,12 @@ Proceso PositivoNegativoCero_Solucion
 
 FinProceso
 ```
+</details>
 
+<details>
+<summary>Mostrar Explicación de la Solución</summary>
 ## Explicación de la Solución
 1.  Aunque PSeInt puede ser flexible, a menudo se requiere un punto y coma (`;`) al final de cada instrucción. Faltaban en los `Escribir`. (Considerado error menor si el perfil es flexible). La sintaxis `Sino Si` es correcta.
 2.  Si un número no es mayor que cero (`num > 0` es falso) y tampoco es menor que cero (`num < 0` es falso), la única posibilidad restante es que sea exactamente cero. El mensaje en el último `Sino` era incorrecto; debe indicar que es cero.
 3.  La estructura `Si ... Sino Si ... Sino ... FinSi` está correctamente cerrada con un único `FinSi`. El error no estaba aquí, sino en la lógica del último `Sino`.
-
+</details>
