@@ -33,37 +33,41 @@ FinProceso
 
 ## Solución Correcta
 ```pseudocode
-Proceso TarifaEstacionamiento_Solucion
-
+Proceso TarifaEstacionamiento_Solucion_Alternativa
+	
     Definir horasEstacionado, totalPagar Como Real;
-    Definir horasAdicionalesEnteras Como Entero; // Variable para el cálculo de horas extra
-
-    Definir tarifaInicial, tarifaAdicional Como Real; // Definir constantes
+    Definir horasEnterasTotales Como Entero;
+	
+    Definir tarifaInicial, tarifaAdicional Como Real;
     tarifaInicial <- 15.0;
     tarifaAdicional <- 10.0;
-
+	
     Escribir "Ingrese el número de horas estacionado:";
     Leer horasEstacionado;
-
+	
     // Validar entrada no negativa
     Si horasEstacionado > 0 Entonces
         Si horasEstacionado <= 1 Entonces
-            totalPagar <- tarifaInicial; // Corregido: Operador '<-'.
+            totalPagar <- tarifaInicial;
         Sino
-            // Calcular horas adicionales (redondeando hacia arriba después de la primera)
-            // Ej: 2.3 horas -> Techo(2.3) = 3. Horas enteras = 3. Total = 15 + (3-1)*10 = 35
-            // Ej: 2.0 horas -> Techo(2.0) = 2. Horas enteras = 2. Total = 15 + (2-1)*10 = 25 (Incorrecto, debería ser 15+10=25)
-            // Corrección lógica: Calcular horas *totales* redondeadas hacia arriba
-            horasEnterasTotales <- Techo(horasEstacionado);
-            // El costo es la tarifa inicial + tarifa adicional por cada hora *después* de la primera
+          
+            horasEnterasTotales <- Trunc(horasEstacionado); // Obtiene la parte entera
+			
+            // Si horasEstacionado tiene una parte decimal (es decir, no es un entero exacto),
+            // entonces necesitamos sumar 1 a la parte entera para redondear hacia arriba.
+            // Ej: horasEstacionado = 2.3 -> Trunc(2.3) = 2. Como 2.3 > 2, sumamos 1 -> 3.
+            // Ej: horasEstacionado = 2.0 -> Trunc(2.0) = 2. Como 2.0 no es > 2, no sumamos 1 -> 2.
+            Si horasEstacionado > horasEnterasTotales Entonces
+                horasEnterasTotales <- horasEnterasTotales + 1;
+            FinSi
+			
             totalPagar <- tarifaInicial + (horasEnterasTotales - 1) * tarifaAdicional;
         FinSi
-        Escribir "Total a pagar: $", totalPagar; // Corregido: Nombre 'totalPagar'.
+        Escribir "Total a pagar: $", totalPagar;
     Sino
         Escribir "Número de horas debe ser positivo.";
     FinSi
-
-
+	
 FinProceso
 ```
 

@@ -45,41 +45,35 @@ FinProceso
 
 ## Solución Correcta
 ```pseudocode
-Proceso TarifaEstacionamiento_Solucion_Alternativa
-	
-    Definir horasEstacionado, totalPagar Como Real;
-    Definir horasEnterasTotales Como Entero;
-	
-    Definir tarifaInicial, tarifaAdicional Como Real;
-    tarifaInicial <- 15.0;
-    tarifaAdicional <- 10.0;
-	
-    Escribir "Ingrese el número de horas estacionado:";
-    Leer horasEstacionado;
-	
-    // Validar entrada no negativa
-    Si horasEstacionado > 0 Entonces
-        Si horasEstacionado <= 1 Entonces
-            totalPagar <- tarifaInicial;
-        Sino
-          
-            horasEnterasTotales <- Trunc(horasEstacionado); // Obtiene la parte entera
-			
-            // Si horasEstacionado tiene una parte decimal (es decir, no es un entero exacto),
-            // entonces necesitamos sumar 1 a la parte entera para redondear hacia arriba.
-            // Ej: horasEstacionado = 2.3 -> Trunc(2.3) = 2. Como 2.3 > 2, sumamos 1 -> 3.
-            // Ej: horasEstacionado = 2.0 -> Trunc(2.0) = 2. Como 2.0 no es > 2, no sumamos 1 -> 2.
-            Si horasEstacionado > horasEnterasTotales Entonces
-                horasEnterasTotales <- horasEnterasTotales + 1;
-            FinSi
-			
-            totalPagar <- tarifaInicial + (horasEnterasTotales - 1) * tarifaAdicional;
-        FinSi
-        Escribir "Total a pagar: $", totalPagar;
+Proceso CalcularIMC_Solucion
+
+    Definir peso, altura, imc Como Real;
+
+    Escribir "Ingrese su peso en kg:";
+    Leer peso;
+    Escribir "Ingrese su altura en metros:";
+    Leer altura;
+
+    // Calcular IMC si peso y altura son válidos
+    Si altura > 0 Y peso > 0 Entonces // Corregido: Altura y peso deben ser > 0.
+        imc <- peso / (altura ^ 2);
+
+        Escribir "Su IMC es: ", imc;
+
+        // Clasificar (aprovechando el flujo del Si/Sino Si)
+        Si imc < 18.5 Entonces
+            Escribir "Clasificación: Bajo peso";
+        Sino Si imc <= 24.9 Entonces // Corregido: Si llega aquí, ya es >= 18.5. Solo falta comprobar el límite superior. Operador 'Y' es implícito.
+            Escribir "Clasificación: Peso normal";
+        Sino Si imc <= 29.9 Entonces // Corregido: Si llega aquí, ya es >= 25.0.
+            Escribir "Clasificación: Sobrepeso";
+        Sino // Si no es ninguno de los anteriores, es >= 30.0
+            Escribir "Clasificación: Obesidad";
+        FinSi // Corregido: Añadir FinSi para la clasificación.
     Sino
-        Escribir "Número de horas debe ser positivo.";
+        Escribir "Peso o altura inválidos (deben ser mayores que cero).";
     FinSi
-	
+
 FinProceso
 ```
 
