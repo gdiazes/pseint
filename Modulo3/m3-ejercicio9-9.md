@@ -10,69 +10,45 @@ Escribe un algoritmo que calcule el Índice de Masa Corporal (IMC = peso / altur
 ## Código con Errores
 ```pseudocode
 Proceso CalcularIMC
-
+	
     Definir peso, altura, imc Como Real;
-
+	
     Escribir "Ingrese su peso en kg:";
     Leer peso;
     Escribir "Ingrese su altura en metros:";
     Leer altura;
-
-    // Calcular IMC si la altura es válida
-    Si altura >= 0 Entonces // Pista 1: ¿Puede la altura ser exactamente 0 para calcular IMC?
+	
+    // Calcular IMC si la altura Y EL PESO son válidos
+    // Pista 1 Corregida: La altura debe ser mayor que 0 para evitar división por cero.
+    // Adicionalmente, el peso también debe ser mayor que 0 para un IMC con sentido.
+    Si altura > 0 Y peso > 0 Entonces // Si EXTERNO (Inicio en línea 11)
         imc <- peso / (altura ^ 2);
-
+		
         Escribir "Su IMC es: ", imc;
-
-        // Clasificar
-        Si imc < 18.5 Entonces
+		
+        // Clasificar CON ANIDACIÓN EXPLÍCITA Y ESTRICTA
+        Si imc < 18.5 Entonces // Si Interno Nivel 1
             Escribir "Clasificación: Bajo peso";
-        Sino Si imc >= 18.5 O imc <= 24.9 Entonces // Pista 2: ¿Debe cumplirse una condición ('O') o ambas ('Y') para estar en este rango?
-            Escribir "Clasificación: Peso normal";
-        Sino Si imc >= 25.0 Y imc <= 29.9 Entonces
-            Escribir "Clasificación: Sobrepeso";
-        Sino // Si no es ninguno de los anteriores, y es >= 30
-            Escribir "Clasificación: Obeso"; // Pista 3: Falta cerrar la estructura interna.
-        // FinSi faltante
-    Sino
-        Escribir "Altura inválida.";
-    FinSi
-
-FinProceso
-```
-
-<details><summary>Mostrar Solución Correcta</summary>
-
-## Solución Correcta
-```pseudocode
-Proceso CalcularIMC_Solucion
-
-    Definir peso, altura, imc Como Real;
-
-    Escribir "Ingrese su peso en kg:";
-    Leer peso;
-    Escribir "Ingrese su altura en metros:";
-    Leer altura;
-
-    // Calcular IMC si peso y altura son válidos
-    Si altura > 0 Y peso > 0 Entonces // Corregido: Altura y peso deben ser > 0.
-        imc <- peso / (altura ^ 2);
-
-        Escribir "Su IMC es: ", imc;
-
-        // Clasificar (aprovechando el flujo del Si/Sino Si)
-        Si imc < 18.5 Entonces
-            Escribir "Clasificación: Bajo peso";
-        Sino Si imc <= 24.9 Entonces // Corregido: Si llega aquí, ya es >= 18.5. Solo falta comprobar el límite superior. Operador 'Y' es implícito.
-            Escribir "Clasificación: Peso normal";
-        Sino Si imc <= 29.9 Entonces // Corregido: Si llega aquí, ya es >= 25.0.
-            Escribir "Clasificación: Sobrepeso";
-        Sino // Si no es ninguno de los anteriores, es >= 30.0
-            Escribir "Clasificación: Obesidad";
-        FinSi // Corregido: Añadir FinSi para la clasificación.
-    Sino
-        Escribir "Peso o altura inválidos (deben ser mayores que cero).";
-    FinSi
+        Sino // Sino de Si Interno Nivel 1
+            // Pista 2 Corregida: Para estar en el rango de "Peso normal", ambas condiciones deben cumplirse (Y lógico).
+            // Ya sabemos que imc no es < 18.5 por el flujo.
+            Si imc <= 24.9 Entonces // Si Interno Nivel 2 (Condición simplificada: ya sabemos >=18.5)
+                Escribir "Clasificación: Peso normal";
+            Sino // Sino de Si Interno Nivel 2
+                // Ya sabemos que imc no es <= 24.9 por el flujo.
+                Si imc <= 29.9 Entonces // Si Interno Nivel 3 (Condición simplificada: ya sabemos >=25.0)
+                    Escribir "Clasificación: Sobrepeso";
+                Sino // Sino de Si Interno Nivel 3 (Si no es ninguno de los anteriores, es >= 30)
+                    Escribir "Clasificación: Obeso";
+                FinSi // Cierra Si Interno Nivel 3 (imc <= 29.9)
+            FinSi     // Cierra Si Interno Nivel 2 (imc <= 24.9)
+        FinSi         // Cierra Si Interno Nivel 1 (imc < 18.5)
+        // Fin de la clasificación anidada
+		
+    Sino // Este Sino pertenece al Si EXTERNO (altura > 0 Y peso > 0)
+        // Mensaje de error mejorado para cubrir ambas validaciones.
+        Escribir "Altura o peso inválidos. Ambos deben ser mayores que cero."; // Esta sería aproximadamente tu línea problemática
+    FinSi // ESTE FinSi CIERRA el Si EXTERNO. (Aproximadamente tu línea 33)
 
 FinProceso
 ```
