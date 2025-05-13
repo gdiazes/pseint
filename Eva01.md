@@ -1,9 +1,3 @@
-¡Excelente! Prepararé una evaluación que consolide los conocimientos de los Módulos 1, 2 y 3, con 10 ejercicios diseñados para tener una dificultad de nivel 10 dentro del contexto de esos módulos. Esto significa que requerirán combinar varios conceptos: variables, tipos de datos, operadores aritméticos/relacionales/lógicos y estructuras condicionales (`Si`/`Sino Si`/`Sino`, `Segun`, anidamiento).
-
-Aquí está la propuesta de evaluación:
-
----
-
 # Evaluación: PSeInt - Módulos 1, 2 y 3
 
 **Instrucciones:** Resuelve los siguientes 10 problemas utilizando pseudocódigo en PSeInt. Asegúrate de definir adecuadamente las variables, utilizar los operadores correctos y aplicar las estructuras condicionales necesarias para cumplir con los requisitos de cada enunciado. Todos los ejercicios tienen una **Dificultad: 10/10** (considerando solo los temas de los Módulos 1-3).
@@ -233,19 +227,6 @@ Muestra el salario final a percibir.
 
 **Conceptos Clave:** Variables Caracter/Entero, Op. Relacionales (`=`), Op. Lógicos (`Y`), `Si`/`Sino` anidados.
 
-```markdown
-### Ejercicio 10: Verificación de Acceso con Doble Factor (Simplificado) (Dificultad 10)
 
-**Enunciado:** Define constantes o variables para un usuario (`usrCorrecto`), una contraseña (`pwdCorrecta`) y un código de verificación (`codigoCorrecto` - entero de 3 dígitos). Pide al usuario que ingrese su usuario y contraseña.
-*   Si el usuario y la contraseña son correctos, entonces pide el código de verificación.
-    *   Si el código es correcto, muestra "Acceso Concedido".
-    *   Si el código es incorrecto, muestra "Acceso Denegado".
-*   Si el usuario o la contraseña iniciales son incorrectos, muestra directamente "Acceso Denegado".
-Utiliza condicionales anidados de forma eficiente.
-
-**Salida Esperada:** "Acceso Concedido" o "Acceso Denegado".
-```
-
----
 
 ¡Mucha suerte con la evaluación! Estos ejercicios pondrán a prueba la comprensión integrada de los primeros tres módulos.
