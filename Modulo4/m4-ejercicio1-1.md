@@ -36,3 +36,4 @@ FinProceso
 2.  La palabra clave para finalizar un bucle `Para` es `FinPara` (todo junto), no `Fin Para` (separado).
 3.  La definición `Definir i Como Entero;` era correcta. El comentario de la Pista 3 era para asegurar la revisión completa, pero no había error allí.
 ```
+</details>
