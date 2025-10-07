@@ -17,7 +17,7 @@ Proceso Numeros1a10Para
 
 FinProceso
 ```
-
+<details><summary>Mostrar Solución Correcta</summary>
 ## Solución Correcta
 ```pseudocode
 Proceso Numeros1a10Para_Solucion
@@ -30,7 +30,7 @@ Proceso Numeros1a10Para_Solucion
 
 FinProceso
 ```
-
+</details><details><summary>Mostrar Explicación de la Solución</summary>
 ## Explicación de la Solución
 1.  La cláusula `Con Paso 1` en un bucle `Para` es opcional. Si el paso es 1 (el valor por defecto), puede omitirse para simplificar el código. No era un error de ejecución, pero sí una posible mejora/simplificación.
 2.  La palabra clave para finalizar un bucle `Para` es `FinPara` (todo junto), no `Fin Para` (separado).
